@@ -1,40 +1,52 @@
-TFCRatioConverter
+trconvert [![NPM version](https://badge.fury.io/js/trconvert.svg)](http://badge.fury.io/js/trconvert)
 =================
 
-Toolkit for CreateJSでパブリッシュしたアニメーション実行ファイルのRatioを変換するコマンドラインツールです。 
-スマフォ向けアニメーションの制作で、各解像度向けのアニメーションを個別に作成するのは工数が掛かり過ぎるので、 
+Toolkit for CreateJSでパブリッシュしたアニメーション実行ファイルのRatioを変換するコマンドラインツールです。
 パブリッシュ後のCanvas操作の座標を任意の倍率に静的に処理するようになっています。node.jsで動きます。
 
-### 使い方
+### install
 nodeで動くのでnodeのインストールが必要です。
 
-リポジトリをcloneしてbin/以下にパスを通す
 
 ```
-git clone https://github.com/ysugimoto/TFCRatioConverter.git
-
-export PATH=$PATH:/path/to/TFCRatioConverter/bin
+npm install -g trconvert
 ```
 
-あとはコマンドラインで起動できます。
-なお、画像は処理しませんので、自前で各倍率に合わせたファイルを用意してください（要望があれば作る）
-実行形式は以下のとおりです。
 
-
+### 使い方
 ```
-$ TFCRatioConverter target_file [arguments]
+$ trconvert <file> [options]
+  Usage: tfconvert <file> [options]
+
+  Options:
+
+    -h, --help           output usage information
+    -V, --version        output the version number
+    -o, --output         convert output file. If empty, output filename will be replaced [target_file_body]_[ratio*10].js.
+    -r, --ratio <ratio>  convert ratio. path caluculated by this rate. ( default 1 )
+    -b, --base <base>    convert base ratio (default ratio 2)
 ```
 
-##### target_file
+##### <file>
 変換対象のToolkit for CreateJSで書き出されたJSファイル。
 
-##### [arguments]
-出力ファイルや変換レートなどの実行時パラメータを渡せます。詳しくは`TFCRatioConverter -h`としてヘルプを見てください。
+##### [options]
+出力ファイルや変換レートなどの実行時パラメータを渡せます。詳しくは`trconvert -h`としてヘルプを見てください。
 
 ### TODO
-Android4.1系では、画面サイズいっぱいのアニメーションの場合に、描画領域拡大と画像サイズ増加によりパフォーマンスが著しく落ちる現象を確認しています。
-iOSでは問題なさそうなので、デバイスターゲットを考慮出来る場合、または簡単なアニメーションの場合には有用だと思います。
+* ~~npm installに対応予定~~ done
+
+### 参照
+[https://github.com/ysugimoto/TFCRatioConverter](https://github.com/ysugimoto/TFCRatioConverter) 
+こちらのロジックをベースに拡張しました。
+
+### 注意
+シェイプのコンパクト化すると、うまく動かない可能性があるので、パブリッシュ時にシェイプのコンパクト化のチェックを外すようにしてください。
+
 
 
 ### LICENSE
+@see [LICENSE](https://github.com/atsumo/trconvert/blob/master/LICENSE)
 MIT License.
+
+[TFCRatioConverter](https://github.com/ysugimoto/TFCRatioConverter) included in this product is MIT License.
