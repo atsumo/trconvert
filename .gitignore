@@ -16,3 +16,6 @@ node_modules
 
 .DS_Store
 .grunt
+
+## JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm Directory-based project format:
+.idea/

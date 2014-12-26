@@ -5,6 +5,7 @@
   "bin": {
     "trconvert": "./bin/trconvert"
   },
+  "main": "lib/converter",
   "dependencies": {
     "commander": "^2.2.0",
     "lodash": "^2.4.1"
