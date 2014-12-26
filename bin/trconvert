@@ -1,2 +1,22 @@
 #!/usr/bin/env node
-require('../index.js');
+
+var PROGRAM_VERSION  = require('../package').version;
+
+var cli = require('../lib/cli');
+
+/**
+ * Command line implementation for trconvert.
+ */
+var program = require('commander');
+
+program
+    .version(PROGRAM_VERSION)
+    .usage('<file> [options]')
+    .option('-o, --output <output>', 'convert output file. If empty, output filename will be replaced [target_file_body]_[ratio*10].js.')
+    .option('-r, --ratio <ratio>', 'convert ratio. path caluculated by this rate. ( default 1 )', 1)
+    .option('-b, --base <base>', 'convert base ratio (default ratio 2)', 2)
+    //.option('-f, --file <file>', 'file [filename]')
+    //.option('-l, --log', 'log mode')
+    .parse(process.argv);
+
+cli(program);
