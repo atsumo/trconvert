@@ -1,6 +1,6 @@
 {
   "name": "trconvert",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Toolkit for createjs ratio converter",
   "bin": {
     "trconvert": "./bin/trconvert"
@@ -11,12 +11,12 @@
     "lodash": "^2.4.1"
   },
   "devDependencies": {
-    "mocha": "^1.18.2",
-    "grunt": "^0.4.5",
-    "grunt-release": "^0.7.0"
+    "gulp": "^3.8.10",
+    "gulp-release-tasks": "0.0.3",
+    "mocha": "^2.1.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha --reporter spec test/test.*.js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-trconvert [![NPM version](https://badge.fury.io/js/trconvert.svg)](http://badge.fury.io/js/trconvert)
+trconvert [![NPM version](https://badge.fury.io/js/trconvert.svg)](http://badge.fury.io/js/trconvert) [![Circle CI](https://circleci.com/gh/atsumo/trconvert.svg?style=svg)](https://circleci.com/gh/atsumo/trconvert)
 =================
 
 Toolkit for CreateJSでパブリッシュしたアニメーション実行ファイルのRatioを変換するコマンドラインツールです。
