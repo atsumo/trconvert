@@ -63,7 +63,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,306,306);
 	this.instance.setTransform(159.5,214.5,1,1,0,0,0,153,153);
 	this.instance.cache(-1,-1,308,308);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(19).to({compositeOperation:NaN},0).to({rotation:-90,x:484.5},13).to({_off:true},50).wait(19));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(19).to({rotation:-90,x:484.5,compositeOperation:NaN},13).to({_off:true},50).wait(19));
 
 	// text
 	this.text = new cjs.Text("sample","bold 30px 'Times'");
@@ -78,7 +78,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,306,306);
 	this.instance_1 = new lib.image1();
 	this.instance_1.setTransform(-159.25,210,0.261,0.261,0,0,0,152.95,153.05);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(19).to({x:118.55},19,cjs.Ease.get(1)).to({x:199.5,y:289.95},8,cjs.Ease.get(1)).to({y:130.05},7,cjs.Ease.get(1)).to({y:213.1},7).to({y:210},4,cjs.Ease.get(1)).wait(25).to({x:531.7},11).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(19).to({x:118.55},19,cjs.Ease.get(1)).to({x:199.5,y:289.95},8,cjs.Ease.get(1)).to({x:199.55,y:131.1},7,cjs.Ease.get(1)).to({guide:{path:[199.55,131.05,194.85,133.25,188.9,137.25,177.05,145.2,170.9,154.15,162.35,166.65,166.5,179.3,171.7,195.1,196.45,210.2]}},7).to({x:199.5,y:210},4,cjs.Ease.get(1)).wait(25).to({x:531.7},11).wait(1));
 
 	// image2
 	this.instance_2 = new lib.image2();
