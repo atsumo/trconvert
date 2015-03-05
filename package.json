@@ -1,6 +1,6 @@
 {
   "name": "trconvert",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "description": "Toolkit for createjs ratio converter",
   "bin": {
     "trconvert": "./bin/trconvert"
