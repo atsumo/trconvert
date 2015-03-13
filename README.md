@@ -45,7 +45,7 @@ $ trconvert <file> [options]
 
 ###release
 ```
-gulp bump --npm
+gulp tag --npm
 ```
 
 ### LICENSE
