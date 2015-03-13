@@ -43,7 +43,10 @@ $ trconvert <file> [options]
 ### 注意
 シェイプのコンパクト化すると、うまく動かない可能性があるので、パブリッシュ時にシェイプのコンパクト化のチェックを外すようにしてください。
 
-
+###release
+```
+gulp bump --npm
+```
 
 ### LICENSE
 @see [LICENSE](https://github.com/atsumo/trconvert/blob/master/LICENSE)
